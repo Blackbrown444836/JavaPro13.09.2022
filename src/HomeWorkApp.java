@@ -55,14 +55,12 @@ public class HomeWorkApp {
 
     // Task 6.
     public static void inRange() {
-        int a;
-        int b;
         Scanner sc = new Scanner(System.in);
         System.out.println("Check sum a+b between 10 and 20");
         System.out.println("Enter the value of a:");
-        a = sc.nextInt();
+        int a = sc.nextInt();
         System.out.println("Enter the value of b:");
-        b = sc.nextInt();
+        int b = sc.nextInt();
         System.out.printf("Result is %b%n- - -%n", checkRange(a, b));
     }
 
@@ -76,16 +74,15 @@ public class HomeWorkApp {
 
     // Task 7.
     public static void plusMinus() {
-        int a;
         System.out.println("Check plus is or minus, enter the value of a:");
         Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        System.out.printf("Result is %s%n- - -%n", checkPlusMinus(a));
+        int variable = sc.nextInt();
+        System.out.printf("Result is %s%n- - -%n", checkPlusMinus(variable));
     }
 
-    public static String checkPlusMinus(int a) {
+    public static String checkPlusMinus(int variable) {
         String result;
-        if (a >= 0) {
+        if (variable >= 0) {
             result = "positive";
         } else {
             result = "negative";
@@ -95,15 +92,14 @@ public class HomeWorkApp {
 
     // Task 8.
     public static void plusTrueMinusFalse() {
-        int a;
         System.out.println("Enter the value, plus'll true, minus'll false");
         Scanner sc = new Scanner(System.in);
-        a = validateOnlyIntNoZero(sc);
-        System.out.printf("Result is %s%n- - -%n", checkplusTrueMinusFalse(a));
+        int variable = validateOnlyIntNoZero(sc);
+        System.out.printf("Result is %s%n- - -%n", checkplusTrueMinusFalse(variable));
     }
 
-    public static boolean checkplusTrueMinusFalse(int a) {
-        if (a > 0) {
+    public static boolean checkplusTrueMinusFalse(int variable) {
+        if (variable > 0) {
             return true;
         } else {
             return false;
@@ -113,24 +109,22 @@ public class HomeWorkApp {
     // Task 9.
 
     public static void numberOfTimes() {
-        String string = "Lockey is ";
-        int variable = 777;
-        int number;
+        String stringExpression = "Lockey is ";
+        int variableExpression = 777;
         System.out.println("Enter the number of lines");
         Scanner sc = new Scanner(System.in);
-        number = sc.nextInt();
-        newLine(string, variable, number);
+        int numberOfLines = sc.nextInt();
+        newLine(stringExpression, variableExpression, numberOfLines);
     }
 
-    public static String newLine(String string, int variable, int number) {
-        int a;
+    public static String newLine(String stringExpression, int variable, int number) {
         int b = 1;
-        for (a = 0; a < number; ) {
-            System.out.println(b + "). " + string + variable);
+        for (int a = 0; a < number; ) {
+            System.out.println(b + "). " + stringExpression + variable);
             a++;
             b++;
         }
-        return string;
+        return stringExpression;
     }
 
     public static int validateOnlyIntNoZero(Scanner scanner) {
@@ -154,10 +148,9 @@ public class HomeWorkApp {
 
     // Task 10.
     public static void leapYear() {
-        int year;
         System.out.printf("- - -%nEnter the year ");
         Scanner sc = new Scanner(System.in);
-        year = sc.nextInt();
+        int year = sc.nextInt();
         System.out.println("leap Year = true, other = false. Entered year - " + calcLeapYear(year));
     }
 
