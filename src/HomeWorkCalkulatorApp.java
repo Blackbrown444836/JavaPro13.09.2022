@@ -2,22 +2,9 @@ import java.util.Scanner;
 
 public class HomeWorkCalkulatorApp {
 
-
     public static void main(String[] args) {
         calcOn();
     }
-
-//    public static boolean indexPower(boolean index) {
-//        System.out.print(" Continue (Press enter) \n Exit (Press n) \n: ");
-//        Scanner sc = new Scanner(System.in);
-//        String input = sc.nextLine();
-//        if (input == "n") {
-//            index = false;
-//        } else {
-//            index = true;
-//        }
-//        return index;
-//    }
 
     public static void calcOn() {
 
@@ -28,15 +15,14 @@ public class HomeWorkCalkulatorApp {
             double result = calc(firstNumber, secondNumber, operation);
             System.out.println("Result: " + result);
             System.out.println("-----------------");
-            System.out.print(" To continue (Press eny key) \n Exit (Press Exit) \n: ");
+            System.out.print(" To continue press eny key) \n To exit press exit) \n: ");
             Scanner sc = new Scanner(System.in);
             String exitKey = sc.nextLine();
-            if ("Exit".equals(exitKey)) {
+            if ("exit".equals(exitKey)) {
                 break;
             }
         }
     }
-
 
     public static double calc(double num1, double num2, String operation) {
         return switch (operation) {
@@ -68,14 +54,9 @@ public class HomeWorkCalkulatorApp {
                 * - multiply
                 / - divide
                 """);
-        String operation = sc.nextLine();
-//        if (sc.nextLine() == "+" || sc.nextLine() == "-" || sc.nextLine() == "*" || sc.nextLine() == "/") {
-        return operation;
-//        } else {
-//            System.out.println("Incorrect option! Try again...");
-//            return getOperation();
+        String operationKey = sc.nextLine();
+        return operationKey;
     }
-//    }
 
     public static double add(double num1, double num2) {
         return num1 + num2;
