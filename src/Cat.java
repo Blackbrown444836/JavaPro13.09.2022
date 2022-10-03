@@ -1,9 +1,8 @@
 public class Cat extends Animal{
-
-    int speedLimit;
-
-    public Cat (String name, int speedLimit){
-        super(name);
-        this.speedLimit = speedLimit;
+    public static int countCat = 0;
+    public Cat(String nameAnimal, double runDistans) {
+        super(nameAnimal, runDistans);
+        countCat++;
+        System.out.println("This cat " + nameAnimal + " runed " + moveRun(setRunDistansAnimalLimit(200),runDistans) + "m");
     }
 }
