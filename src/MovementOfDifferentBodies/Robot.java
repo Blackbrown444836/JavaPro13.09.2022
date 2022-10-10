@@ -2,8 +2,8 @@ package MovementOfDifferentBodies;
 
 public class Robot implements ParticipantProperty {
     String nameOfParticipant;
-    int limitNumberOfJumps = 15;
-    double limitDistance = 800;
+    int limitHeightOfJumps = 3;
+    double limitDistance = 500;
 
     public Robot(String nameOfParticipant) {
         this.nameOfParticipant = nameOfParticipant;
@@ -16,7 +16,7 @@ public class Robot implements ParticipantProperty {
 
     @Override
     public int jumping() {
-        return limitNumberOfJumps;
+        return limitHeightOfJumps;
     }
 
     @Override

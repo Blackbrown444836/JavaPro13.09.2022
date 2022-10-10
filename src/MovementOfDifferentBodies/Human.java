@@ -2,7 +2,7 @@ package MovementOfDifferentBodies;
 
 public class Human implements ParticipantProperty {
     String nameOfParticipant;
-    int limitNumberOfJumps = 10;
+    int limitHeightOfJumps = 2;
     double limitDistance = 1000;
 
     public Human(String nameOfParticipant) {
@@ -16,7 +16,7 @@ public class Human implements ParticipantProperty {
 
     @Override
     public int jumping() {
-        return limitNumberOfJumps;
+        return limitHeightOfJumps;
     }
 
     @Override
