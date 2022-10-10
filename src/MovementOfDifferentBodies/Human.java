@@ -1,6 +1,6 @@
 package MovementOfDifferentBodies;
 
-public class Human implements Participant  {
+public class Human implements ParticipantProperty {
     String nameOfParticipant;
     int limitNumberOfJumps = 10;
     double limitDistance = 1000;

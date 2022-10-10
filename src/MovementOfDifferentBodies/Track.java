@@ -1,21 +1,15 @@
 package MovementOfDifferentBodies;
 
-public class Track {
-    private final double distance;
-    private final  int wall;
+public class Track implements TrackProperty {
 
-    public Track(double distance, int wall) {
-        this.distance = distance;
-        this.wall = wall;
+    double trackPartLomg;
+
+    @Override
+    public double TrackProperty() {
+        return 0;
     }
 
-    public double getDistance() {
-        return distance;
-    }
-
-    public int getWall() {
-        return wall;
+    public Track(double trackPartLomg) {
+        this.trackPartLomg = trackPartLomg;
     }
 }
-
-

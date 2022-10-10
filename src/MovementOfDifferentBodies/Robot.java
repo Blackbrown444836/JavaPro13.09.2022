@@ -1,6 +1,6 @@
 package MovementOfDifferentBodies;
 
-public class Robot implements Participant {
+public class Robot implements ParticipantProperty {
     String nameOfParticipant;
     int limitNumberOfJumps = 15;
     double limitDistance = 800;
