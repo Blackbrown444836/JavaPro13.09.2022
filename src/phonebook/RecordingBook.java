@@ -1,10 +1,10 @@
 package phonebook;
 
-public class NewRecord {
+public class RecordingBook {
     private final String contactName;
     private final String contactPhoneNumber;
 
-    public NewRecord(String contactName, String contactPhoneNumber) {
+    public RecordingBook(String contactName, String contactPhoneNumber) {
         this.contactName = contactName;
         this.contactPhoneNumber = contactPhoneNumber;
     }
@@ -17,5 +17,8 @@ public class NewRecord {
         return contactPhoneNumber;
     }
 
-
+    @Override
+    public String toString() {
+        return "Name is: " + contactName + ". Phone number is: " + contactPhoneNumber;
+    }
 }

@@ -36,7 +36,7 @@ public class Controller<T> {
 
     public void calcOccurrenceStructure(List<T> inputData, List<T> arguments) {
         for (T unit : arguments) {
-            System.out.println("word " + unit + " repeat " + countOccurance(inputData, unit));
+            System.out.println("word " + unit.getClass() + " repeat " + countOccurance(inputData, unit));
         }
     }
 }

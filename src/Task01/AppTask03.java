@@ -6,14 +6,9 @@ import java.util.List;
 
 public class AppTask03 {
     public static void main(String[] args) {
-        Integer[] ArreyIntArguments = {1, 2, 3, 4, 1, 2, 3, 1, 2, 1};
-
-        Controller<Integer> iconvectorListController = new Controller<>();
-
-        List<Integer> ArreyIntArgumentsCollection = new ArrayList<>(Arrays.asList(ArreyIntArguments));
-
-        System.out.println(iconvectorListController.searchingSame(ArreyIntArgumentsCollection));
-
+        Integer[] arrayIntArguments = {1, 2, 3, 4, 1, 2, 3, 1, 2, 1};
+        Controller<Integer> convectorListController = new Controller<>();
+        List<Integer> arrayIntArgumentsCollection = new ArrayList<>(Arrays.asList(arrayIntArguments));
+        System.out.println(convectorListController.searchingSame(arrayIntArgumentsCollection));
     }
-
 }
