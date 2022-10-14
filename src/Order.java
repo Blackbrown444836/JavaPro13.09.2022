@@ -15,6 +15,10 @@ public class Order {
         return clientOderNumber;
     }
 
+    public String getClientOderName() {
+        return clientOderName;
+    }
+
     @Override
     public String toString() {
         return " " + clientOderNumber + " | " + clientOderName;
