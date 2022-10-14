@@ -11,6 +11,12 @@ public class App {
         cafe.addCoffeeOrderBoard("Slava");
         cafe.addCoffeeOrderBoard("Kostya");
 
-      cafe.draw();
+        cafe.draw();
+
+        System.out.println("Enter number of ready order");
+        cafe.deliver(5);
+
+        System.out.println("Next turn of ready order: ");
+        cafe.turn();
     }
 }

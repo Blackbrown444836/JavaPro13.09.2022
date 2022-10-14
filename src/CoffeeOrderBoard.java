@@ -27,12 +27,27 @@ public class CoffeeOrderBoard {
         }
     }
 
-    public void deliver(int nunber){
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter number of ready order");
-    nunber = scanner.nextInt();
-if (nunber = coffeeOrderBoardn.getFirst().getClientOderNumber(toString)) re
 
+public void turn() {
+    System.out.println("-----------");
+    System.out.println(" Num | Name");
+    for (Order order : coffeeOrderBoardn) {
+        if (coffeeOrderBoardn)
+            System.out.println(order.toString());
+    }
 }
+
+
+    public void deliver(int nunber) {
+        Scanner scanner = new Scanner(System.in);
+        nunber = scanner.nextInt();
+        for (Order order : coffeeOrderBoardn) {
+            if (nunber == order.getClientOderNumber()) {
+                coffeeOrderBoardn.remove(nunber - 1);
+                draw();
+                return;
+            }
+        }
+    }
 }
 
