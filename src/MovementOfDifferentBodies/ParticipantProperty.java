@@ -1,15 +1,9 @@
 package MovementOfDifferentBodies;
 
-public interface ParticipantProperty extends Running,Jumping {
+public interface ParticipantProperty {
+    String nameId();
 
-String nameId();
-
-
-    @Override
     int jumping();
 
-    @Override
     double runningMax();
-
-
 }
