@@ -3,11 +3,14 @@ public class Animal {
     private double runDistansAnimalLimit;
     private final double runDistansAnimal;
     private double swimDistansAnimalLimit;
+    private static int animalCount;
 
     public Animal(String nameAnimal, double runDistansAnimal) {
         this.nameAnimal = nameAnimal;
         this.runDistansAnimal = runDistansAnimal;
+        this.animalCount++;
     }
+
 
     public double setRunDistansAnimalLimit(double runDistansAnimalLimit) {
         this.runDistansAnimalLimit = runDistansAnimalLimit;
@@ -38,6 +41,12 @@ public class Animal {
         }
         return realSwimDistans;
     }
+
+    public static int getAnimalCount() {
+        return animalCount;
+    }
+
 }
+
 
 
