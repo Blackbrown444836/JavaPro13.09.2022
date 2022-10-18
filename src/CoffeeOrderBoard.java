@@ -24,9 +24,9 @@ public class CoffeeOrderBoard {
     public void turn() {
         System.out.println("====================");
         System.out.println(" Num | Name");
-        System.out.println(coffeeOrderBoard.get(0));
-        System.out.println(coffeeOrderBoard.get(1));
-        System.out.println(coffeeOrderBoard.get(2));
+        for (int i = 0; i <= 2; i++) {
+            System.out.println(coffeeOrderBoard.get(i));
+        }
     }
 
     public void deliver() {
