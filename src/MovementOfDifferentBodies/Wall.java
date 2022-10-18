@@ -13,8 +13,4 @@ double wallHeight;
         return wallHeight;
     }
 
-    @Override
-    public double getRoadSise() {
-        return 0;
-    }
 }

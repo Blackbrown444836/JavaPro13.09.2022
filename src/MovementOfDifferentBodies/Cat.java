@@ -21,6 +21,5 @@ public class Cat implements ParticipantProperty {
     public double runningMax() {
         return limitDistance;
     }
-
 }
 
