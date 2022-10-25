@@ -1,14 +1,18 @@
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 
 public class FileNavigator {
 
-    private final HashMap<String, ArrayList<FileData>> storageOfFiles = new HashMap<>();
+    private final Map<String, ArrayList<FileData>> storageOfFiles = new HashMap<>();
 
     public void add(String pathToFile, FileData savedFile) {
+
         if (!Objects.equals(savedFile.puchOfFile(), pathToFile)) {
             System.out.println("Path " + pathToFile + " of file '" + savedFile.fileName() +
                     "' does`nt fits of the paths of the list.");
+            System.out.println();
         }
+
         if (!storageOfFiles.containsKey(pathToFile)) {
             storageOfFiles.put(pathToFile, new ArrayList<FileData>());
             storageOfFiles.get(pathToFile).add(savedFile);
@@ -26,9 +30,8 @@ public class FileNavigator {
         ArrayList<FileData> allFiles = sortBySize();
         ArrayList<FileData> filteredFiles = new ArrayList<>();
         for (int i = 0; i < storageOfFiles.size(); i++) {
-            while (allFiles.get(i).sizeInBytes() <= maxSizeInBytes) {
+            if (allFiles.get(i).sizeInBytes() <= maxSizeInBytes) {
                 filteredFiles.add(allFiles.get(i));
-                break;
             }
         }
         return filteredFiles;
