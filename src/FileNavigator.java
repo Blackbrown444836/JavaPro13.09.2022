@@ -7,7 +7,7 @@ public class FileNavigator {
 
     public void add(String pathToFile, FileData savedFile) {
 
-        if (!Objects.equals(savedFile.puchOfFile(), pathToFile)) {
+        if (savedFile.puchOfFile().equals(pathToFile)) {
             System.out.println("Path " + pathToFile + " of file '" + savedFile.fileName() +
                     "' does`nt fits of the paths of the list.");
             System.out.println();
