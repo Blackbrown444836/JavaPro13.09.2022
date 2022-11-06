@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) {
         CoffeeOrderBoard cafe = new CoffeeOrderBoard();
 
-        cafe.addCoffeeOrderBoard("Semen");
+        cafe.addCoffeeOrderBoard("Vova");
         cafe.addCoffeeOrderBoard("Misha");
         cafe.addCoffeeOrderBoard("Fima");
         cafe.addCoffeeOrderBoard("Zyasha");
